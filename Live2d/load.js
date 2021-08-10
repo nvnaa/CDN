@@ -119,9 +119,9 @@
   const initConfig = {
     mode: "fixed",
 // 移动端隐藏
-  hidden: true,
+//hidden: true,
 // 移动端显示
-//   hidden:false,
+    hidden:false,
     content: {
       link: 引流[Math.floor(Math.random() * 引流.length)], // 引流链接
       referer: "Hi!", // 存在访问来源时的欢迎文本
