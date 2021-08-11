@@ -136,7 +136,7 @@
     ],
   },
 //   夜间模式控件
-    night: "toggleNightMode()",
+    night: "updateStyle()",
     model: [
       // 待加载的模型列表
       "https://cdn.jsdelivr.net/gh/nvnaa/CDN/Live2d/live2d/Ava/Ava.model3.json",
@@ -156,7 +156,7 @@
     /*
     const closeBtn = document.querySelector(".pio-container .pio-action .pio-close")
     closeBtn.insertAdjacentHTML('beforebegin', '<span class="pio-top"></span>')
-    */
+    
     const topBtn = document.querySelector(".pio-container .pio-action .pio-top")
     // 返回顶部
     topBtn.onclick = function () {
@@ -165,7 +165,7 @@
     topBtn.onmouseover = function () {
       pio_reference.modules.render("想回到页面顶部吗？");
     };
-    
+    */
     // Then apply style
     pio_refresh_style()
   }
