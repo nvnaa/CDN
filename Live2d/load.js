@@ -151,11 +151,12 @@
   function 加载圣·嘉然() {
     pio_reference = new Paul_Pio(initConfig)
 
-    pio_alignment = "right" // 右下角
-    //pio_alignment = "left" // 左下角
+    //pio_alignment = "right" // 右下角
+    pio_alignment = "left" // 左下角
     /*
     const closeBtn = document.querySelector(".pio-container .pio-action .pio-close")
     closeBtn.insertAdjacentHTML('beforebegin', '<span class="pio-top"></span>')
+    */
     const topBtn = document.querySelector(".pio-container .pio-action .pio-top")
     // 返回顶部
     topBtn.onclick = function () {
@@ -164,7 +165,7 @@
     topBtn.onmouseover = function () {
       pio_reference.modules.render("想回到页面顶部吗？");
     };
-    */
+    
     // Then apply style
     pio_refresh_style()
   }
