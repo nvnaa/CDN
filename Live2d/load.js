@@ -119,15 +119,16 @@
   const initConfig = {
     mode: "fixed",
 // 移动端隐藏
-//hidden: true,
+    hidden: true,
 // 移动端显示
-    hidden:false,
+    //hidden:false,
     content: {
       link: 引流[Math.floor(Math.random() * 引流.length)], // 引流链接
       referer: "Hi!", // 存在访问来源时的欢迎文本
       welcome: ["Hi!"], // 未开启时间问好时的欢迎文本
+      close: ["Bye"],
       skin: ["诶，想看看其他团员吗？", "替换后入场文本"], // 0更换模型提示文案  1更换完毕入场文案
-        custom: [// 鼠标移上去提示元素
+      custom: [// 鼠标移上去提示元素
       { "selector": ".comment-form", "text": "Content Tooltip" },
       { "selector": ".home-social a:last-child", "text": "Blog Tooltip" },
       { "selector": ".list .postname", "type": "read" },
@@ -135,7 +136,7 @@
     ],
   },
 //   夜间模式控件
-  night: "toggleNightMode()",
+    night: "single.night()",
     model: [
       // 待加载的模型列表
       "https://cdn.muyu.love/Blog/Handsome/Live2d/live2d/Ava/Ava.model3.json",
@@ -150,8 +151,8 @@
   function 加载圣·嘉然() {
     pio_reference = new Paul_Pio(initConfig)
 
-    // pio_alignment = "right" // 右下角
-    pio_alignment = "left" // 左下角
+    pio_alignment = "right" // 右下角
+    //pio_alignment = "left" // 左下角
 
     const closeBtn = document.querySelector(".pio-container .pio-action .pio-close")
     closeBtn.insertAdjacentHTML('beforebegin', '<span class="pio-top"></span>')
