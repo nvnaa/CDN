@@ -55,7 +55,7 @@
   border: 1px solid #fdcf7b;
   border: 0;
   width: 2em;
-  height: 2em;
+  height: 3em;
   margin-bottom: 0.6em;
 }
 .pio-action .pio-home {
