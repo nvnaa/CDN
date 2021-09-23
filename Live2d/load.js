@@ -21,7 +21,7 @@
   }
 
   const 引流 = [
-  "https://muyu.love/",
+  "https://space.bilibili.com/1994963/",
   ]
 
   const CUSTOM_CSS = `#pio-container {
@@ -139,8 +139,8 @@
     night: "updateStyle()",
     model: [
       // 待加载的模型列表
-      "https://cdn.jsdelivr.net/gh/nvnaa/CDN/Live2d/live2d/Ava/Ava.model3.json",
       "https://cdn.jsdelivr.net/gh/nvnaa/CDN/Live2d/live2d/Diana/Diana.model3.json",
+      "https://cdn.jsdelivr.net/gh/nvnaa/CDN/Live2d/live2d/Ava/Ava.model3.json",
     ],
     tips: true, // 时间问好
     onModelLoad: onModelLoad // 模型加载完成回调
